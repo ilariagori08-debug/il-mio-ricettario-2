@@ -1,62 +1,81 @@
-body {
-    font-family: 'Helvetica', sans-serif;
+/* 1. RESET: Toglie i margini predefiniti del browser per avere il controllo totale */
+body, html {
     margin: 0;
-    transition: margin-left .5s; /* Effetto fluido per il contenuto */
-}
-
-/* IL PULSANTE IN ALTO A SINISTRA */
-.open-btn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #2c3e50;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    position: fixed;
-    top: 15px;
-    left: 15px;
-    z-index: 1;
-    border-radius: 5px;
-}
-
-/* LA SIDEBAR (Nascosta all'inizio) */
-.sidebar {
+    padding: 0;
     height: 100%;
-    width: 0; /* Parte da zero */
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s; /* Velocità della cascata */
-    padding-top: 60px;
+    font-family: 'Georgia', serif; /* Font elegante e classico */
+    background-color: #fcfaf7;    /* Un bianco avorio caldo, molto rilassante */
+    color: #4a4a4a;               /* Grigio scuro, meno aggressivo del nero */
 }
 
-.sidebar a {
-    padding: 8px 32px;
-    text-decoration: none;
-    font-size: 22px;
-    color: #818181;
-    display: block;
+/* 2. IL MENU (In alto a sinistra) */
+.nav-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.dropbtn {
+    background-color: #d4a373; /* Un color terra di Siena delicato */
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;       /* Bordi arrotondati per l'estetica modern/soft */
     transition: 0.3s;
 }
 
-.sidebar a:hover {
-    color: #f1f1f1;
+.dropbtn:hover {
+    background-color: #bc8a5f; /* Si scurisce leggermente quando ci passi sopra */
 }
 
-/* Tasto chiudi dentro il menu */
-.sidebar .close-btn {
+/* 3. LA CASCATA (Nascosta di default) */
+.dropdown-content {
+    display: none;            /* Nasconde la lista */
     position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1); /* Ombra leggera per dare profondità */
+    border-radius: 8px;
+    margin-top: 5px;
+    z-index: 1;
 }
 
-header {
-    padding: 60px;
+/* Link dentro la cascata */
+.dropdown-content a {
+    color: #4a4a4a;
+    padding: 12px 16px;
+    text-decoration: none;    /* Toglie la sottolineatura blu dei link */
+    display: block;           /* Fa sì che ogni link occupi una riga intera */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+
+/* Classe che JavaScript aggiunge per mostrare il menu */
+.show { display: block; }
+
+/* 4. LA HOME PAGE (Titolo e Descrizione) */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Centra verticalmente */
+    align-items: center;      /* Centra orizzontalmente */
+    height: 100vh;            /* Occupa tutta l'altezza dello schermo */
     text-align: center;
-    background: #f8f9fa;
+}
+
+h1 {
+    font-size: 4rem;          /* Titolo molto grande */
+    margin-bottom: 10px;
+    letter-spacing: 2px;      /* Spazio tra le lettere per eleganza */
+}
+
+.description {
+    max-width: 600px;         /* Impedisce alla descrizione di allargarsi troppo */
+    line-height: 1.6;         /* Aumenta lo spazio tra le righe per la leggibilità */
+    font-style: italic;
 }
