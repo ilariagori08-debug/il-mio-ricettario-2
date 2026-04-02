@@ -8,19 +8,42 @@
 </head>
 <body>
 
+    <button class="open-btn" onclick="toggleMenu()">☰ Ricette</button>
+
     <nav id="menu-laterale" class="sidebar">
-        <a href="index.html">Home</a>
-        <a href="salato.html">Ricette Salate</a>
-        <a href="dolce.html">Ricette Dolci</a>
+        <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">&times; Chiudi</a>
+        <div class="menu-content">
+            <a href="index.html">Home</a>
+            <hr>
+            <a href="salato.html">🥨 Ricette Salate</a>
+            <a href="dolce.html">🍰 Ricette Dolci</a>
+        </div>
     </nav>
 
     <header>
         <h1>Sapori d'Italia</h1>
-        <p>Un viaggio gastronomico tra le regioni</p>
+        <p>Il tuo viaggio tra i piatti regionali</p>
     </header>
 
-    <main>
-        </main>
+    <main id="main-content">
+        <h2>Benvenuti</h2>
+        <p>Seleziona una categoria dal menu in alto a sinistra per iniziare.</p>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu-laterale");
+            const main = document.getElementById("main-content");
+            
+            if (menu.style.width === "250px") {
+                menu.style.width = "0";
+                main.style.marginLeft = "0";
+            } else {
+                menu.style.width = "250px";
+                main.style.marginLeft = "250px";
+            }
+        }
+    </script>
 
 </body>
 </html>
