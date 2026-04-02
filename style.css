@@ -4,8 +4,8 @@ body, html {
     padding: 0;
     height: 100%;
     font-family: 'Georgia', serif; /* Font elegante e classico */
-    background-color: #fcfaf7;    /* Un bianco avorio caldo, molto rilassante */
-    color: #4a4a4a;               /* Grigio scuro, meno aggressivo del nero */
+    background-color: #F1DD99;    /* Un bianco avorio caldo, molto rilassante */
+    color: #BF201F;               /* Grigio scuro, meno aggressivo del nero */
 }
 
 /* 2. IL MENU (In alto a sinistra) */
@@ -22,7 +22,7 @@ body, html {
     font-size: 16px;
     border: none;
     cursor: pointer;
-    border-radius: 8px;       /* Bordi arrotondati per l'estetica modern/soft */
+    border-radius: 50px;       /* Bordi arrotondati per l'estetica modern/soft */
     transition: 0.3s;
 }
 
