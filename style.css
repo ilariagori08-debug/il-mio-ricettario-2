@@ -4,7 +4,7 @@ body, html {
     padding: 0;
     height: 100%;
     font-family: 'Georgia', serif; /* Font elegante e classico */
-    background-color: #F2F2F2;    /* Un bianco avorio caldo, molto rilassante */
+    background-color: #F2F2F2;    /* colore sfondo */
     color: #63BFBF;               /* Grigio scuro, meno aggressivo del nero */
 }
 
@@ -16,7 +16,7 @@ body, html {
 }
 
 .dropbtn {
-    background-color: #63BFBF; /* Un color terra di Siena delicato */
+    background-color: #63BFBF; /*colore di "home" */
     color: white;
     padding: 16px 24px;
     font-size: 16px;
