@@ -18,7 +18,7 @@ body, html {
 .dropbtn {
     background-color: #63BFBF; /* Un color terra di Siena delicato */
     color: white;
-    padding: 12px 20px;
+    padding: 16px 24px;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -44,7 +44,7 @@ body, html {
 
 /* Link dentro la cascata */
 .dropdown-content a {
-    color: #4a4a4a;
+    color:#019587 ;
     padding: 12px 16px;
     text-decoration: none;    /* Toglie la sottolineatura blu dei link */
     display: block;           /* Fa sì che ogni link occupi una riga intera */
