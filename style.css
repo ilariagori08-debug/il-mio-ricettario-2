@@ -69,7 +69,7 @@ body, html {
 }
 
 h1 {
-    font-size: 8rem;          /* Titolo molto grande */
+    font-size: 6rem;          /* Titolo molto grande */
     margin-bottom: 10px;
     letter-spacing: 2px;      /* Spazio tra le lettere per eleganza */
 }
