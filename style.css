@@ -4,7 +4,7 @@ body, html {
     padding: 0;
     height: 100%;
     font-family: 'Georgia', serif; /* Font elegante e classico */
-    background-color: #F1DD99;    /* Un bianco avorio caldo, molto rilassante */
+    background-color: #EBEFF2;    /* Un bianco avorio caldo, molto rilassante */
     color: #BF201F;               /* Grigio scuro, meno aggressivo del nero */
 }
 
@@ -16,7 +16,7 @@ body, html {
 }
 
 .dropbtn {
-    background-color: #d4a373; /* Un color terra di Siena delicato */
+    background-color: #6AA790; /* Un color terra di Siena delicato */
     color: white;
     padding: 12px 20px;
     font-size: 16px;
@@ -27,7 +27,7 @@ body, html {
 }
 
 .dropbtn:hover {
-    background-color: #bc8a5f; /* Si scurisce leggermente quando ci passi sopra */
+    background-color: #019587; /* Si scurisce leggermente quando ci passi sopra */
 }
 
 /* 3. LA CASCATA (Nascosta di default) */
@@ -69,7 +69,7 @@ body, html {
 }
 
 h1 {
-    font-size: 4rem;          /* Titolo molto grande */
+    font-size: 8rem;          /* Titolo molto grande */
     margin-bottom: 10px;
     letter-spacing: 2px;      /* Spazio tra le lettere per eleganza */
 }
