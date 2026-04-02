@@ -1,47 +1,33 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sapori d'Italia</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Sapori d'Italia</title>
+    <link rel="stylesheet" href="style.css"> </head>
 <body>
 
-    <button class="open-btn" onclick="toggleMenu()">☰ Ricette</button>
-
-    <nav id="menu-laterale" class="sidebar">
-        <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">&times; Chiudi</a>
-        <div class="menu-content">
-            <a href="index.html">Home</a>
-            <hr>
-            <a href="salato.html">🥨 Ricette Salate</a>
-            <a href="dolce.html">🍰 Ricette Dolci</a>
+    <div class="nav-container">
+        <button class="dropbtn" onclick="toggleDropdown()">Home ▾</button>
+        
+        <div id="myDropdown" class="dropdown-content">
+            <a href="index.html">Pagina Principale</a>
+            <a href="salato.html">Ricette Salate</a>
+            <a href="dolce.html">Ricette Dolci</a>
         </div>
-    </nav>
+    </div>
 
-    <header>
+    <section class="hero">
         <h1>Sapori d'Italia</h1>
-        <p>Il tuo viaggio tra i piatti regionali</p>
-    </header>
-
-    <main id="main-content">
-        <h2>Benvenuti</h2>
-        <p>Seleziona una categoria dal menu in alto a sinistra per iniziare.</p>
-    </main>
+        <p class="description">
+            Benvenuti nel mio viaggio gastronomico. Qui troverete le tradizioni 
+            più autentiche delle regioni italiane, divise tra l'energia del salato 
+            e la dolcezza dei fine pasto.
+        </p>
+    </section>
 
     <script>
-        function toggleMenu() {
-            const menu = document.getElementById("menu-laterale");
-            const main = document.getElementById("main-content");
-            
-            if (menu.style.width === "250px") {
-                menu.style.width = "0";
-                main.style.marginLeft = "0";
-            } else {
-                menu.style.width = "250px";
-                main.style.marginLeft = "250px";
-            }
+        function toggleDropdown() {
+            // Cerca l'elemento con ID "myDropdown" e gli aggiunge/toglie la classe "show"
+            document.getElementById("myDropdown").classList.toggle("show");
         }
     </script>
 
