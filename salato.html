@@ -1,32 +1,72 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>L'Italia e i suoi sapori</title>
-    <link rel="stylesheet" href="style.css"> </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Tradizione della Pasta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
 
-    <div class="nav-container">
+    <!-- MENU -->
+    <nav class="nav-container">
         <button class="dropbtn" onclick="toggleDropdown()">Home ▾</button>
         
         <div id="myDropdown" class="dropdown-content">
             <a href="index.html">Pagina Principale</a>
             <a href="salato.html">Ricette Salate</a>
             <a href="dolce.html">Ricette Dolci</a>
+            <a href="tradizione.html">Tradizione</a>
         </div>
-    </div>
+    </nav>
 
-   <!--  <section class="hero">
-        <h1>Sapori d'Italia</h1>
-        <p class="description">
-            Benvenuto/a nel tuo ricettario personale. Qui troverai il modo di cucinare i tuoi piatti preferiti tipici della cultura italiana.
-            Immergiti con me nel mondo del salato e del dolce!
+    <!-- CONTENUTO -->
+    <section class="content-page">
+
+        <h2>La Tradizione della Pasta Italiana</h2>
+
+        <p>
+            La pasta rappresenta uno dei simboli più importanti della cultura gastronomica italiana. 
+            Presente sulle tavole di ogni regione, essa non è solo un alimento, ma un vero e proprio 
+            elemento identitario che racconta storia, territorio e tradizione.
         </p>
-    </section> -->
+
+        <img src="img/pasta1.jpg" alt="Pasta fresca italiana" class="content-image">
+
+        <p>
+            Dalla pasta fresca fatta a mano nelle cucine delle nonne, fino ai grandi pastifici 
+            industriali, l'Italia ha sviluppato nel tempo una straordinaria varietà di formati: 
+            spaghetti, penne, fusilli, tagliatelle e molti altri.
+        </p>
+
+        <p>
+            Ogni regione ha le sue specialità: in Emilia-Romagna troviamo le tagliatelle al ragù, 
+            nel Lazio la celebre carbonara, mentre in Campania dominano gli spaghetti con pomodoro e basilico.
+        </p>
+
+        <img src="img/pasta2.jpg" alt="Spaghetti al pomodoro" class="content-image">
+
+        <p>
+            La pasta non è soltanto un piatto, ma un momento di condivisione familiare. 
+            Attorno ad essa si costruiscono ricordi, tradizioni e momenti di convivialità 
+            che rendono la cucina italiana unica nel mondo.
+        </p>
+
+    </section>
 
     <script>
         function toggleDropdown() {
-            // Cerca l'elemento con ID "myDropdown" e gli aggiunge/toglie la classe "show"
             document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                let dropdown = document.getElementById("myDropdown");
+                if (dropdown.classList.contains('show')) {
+                    dropdown.classList.remove('show');
+                }
+            }
         }
     </script>
 
