@@ -1,1 +1,34 @@
-aaaa
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>L'Italia e i suoi sapori</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+
+    <div class="nav-container">
+        <button class="dropbtn" onclick="toggleDropdown()">Home ▾</button>
+        
+        <div id="myDropdown" class="dropdown-content">
+            <a href="index.html">Pagina Principale</a>
+            <a href="salato.html">Ricette Salate</a>
+            <a href="dolce.html">Ricette Dolci</a>
+        </div>
+    </div>
+
+   <!--  <section class="hero">
+        <h1>Sapori d'Italia</h1>
+        <p class="description">
+            Benvenuto/a nel tuo ricettario personale. Qui troverai il modo di cucinare i tuoi piatti preferiti tipici della cultura italiana.
+            Immergiti con me nel mondo del salato e del dolce!
+        </p>
+    </section> -->
+
+    <script>
+        function toggleDropdown() {
+            // Cerca l'elemento con ID "myDropdown" e gli aggiunge/toglie la classe "show"
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+    </script>
+
+</body>
+</html>
